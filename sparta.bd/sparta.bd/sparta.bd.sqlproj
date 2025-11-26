@@ -58,8 +58,13 @@
     <Folder Include="Properties" />
     <Folder Include="Tables" />
     <Folder Include="Scripts" />
+    <Folder Include="Scripts\post" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Tables\Usuario.sql" />
+    <Build Include="Tables\Users.sql" />
+    <PostDeploy Include="Scripts\PostDeployment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\post\users.sql" />
   </ItemGroup>
 </Project>

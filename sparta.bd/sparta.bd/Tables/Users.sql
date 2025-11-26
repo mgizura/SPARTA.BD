@@ -1,4 +1,4 @@
-CREATE TABLE [dbo].[Usuario] (
+CREATE TABLE [dbo].[Users] (
     [Id] INT IDENTITY(1,1) PRIMARY KEY,
     [Username] NVARCHAR(100) NOT NULL UNIQUE,
     [Email] NVARCHAR(255) NOT NULL UNIQUE,
@@ -7,8 +7,8 @@ CREATE TABLE [dbo].[Usuario] (
     [LastName] NVARCHAR(200) NULL,
     [IsActive] BIT NOT NULL DEFAULT 1,
     [CreatedAt] DATETIME2 NOT NULL DEFAULT GETDATE(),
-    [UpdatedAt] DATETIME2 NULL
+    [UpdatedAt] DATETIME2 NULL,
+    
+    CONSTRAINT [PK_User] PRIMARY KEY CLUSTERED ([Id] ASC)
 );
-
-CREATE INDEX IX_Usuario_Username ON [dbo].[Usuario]([Username]);
-CREATE INDEX IX_Usuario_Email ON [dbo].[Usuario]([Email]);
+GO
