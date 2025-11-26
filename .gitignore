@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/sparta.bd/.vs
+/sparta.bd/sparta.bd/obj
+/sparta.bd/sparta.bd/bin
+/sparta.bd/sparta.bd/sparta.bd.dbmdl
+/sparta.bd/sparta.bd/sparta.bd.jfm
