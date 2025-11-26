@@ -61,10 +61,12 @@
     <Folder Include="Scripts\post" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Tables\Users.sql" />
     <PostDeploy Include="Scripts\PostDeployment.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\post\users.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\Users.sql" />
   </ItemGroup>
 </Project>

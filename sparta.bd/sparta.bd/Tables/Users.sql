@@ -1,5 +1,6 @@
-CREATE TABLE [dbo].[Users] (
-    [Id] INT IDENTITY(1,1) PRIMARY KEY,
+﻿CREATE TABLE [dbo].[Users]
+(
+    [Id] INT IDENTITY(1,1) NOT NULL,
     [Username] NVARCHAR(100) NOT NULL UNIQUE,
     [Email] NVARCHAR(255) NOT NULL UNIQUE,
     [PasswordHash] NVARCHAR(500) NOT NULL,
@@ -9,6 +10,6 @@ CREATE TABLE [dbo].[Users] (
     [CreatedAt] DATETIME2 NOT NULL DEFAULT GETDATE(),
     [UpdatedAt] DATETIME2 NULL,
     
-    CONSTRAINT [PK_User] PRIMARY KEY CLUSTERED ([Id] ASC)
+    CONSTRAINT [PK_Users] PRIMARY KEY CLUSTERED ([Id] ASC)
 );
-GO
+GO 
