@@ -4,7 +4,8 @@ GO
 MERGE INTO [dbo].[Users] AS [Target]
 USING (VALUES
 
- (N'admin@clarika.com.ar',N'admin@clarika.com.ar',N'Admin', 'Clarika',N'$2b$10$afbB1C2YSwSwTvgi1Gfmw.GMS238SjWHl3rURRSd7I9KzZeUFlC6u') 
+ (N'admin@clarika.com.ar',N'admin@clarika.com.ar',N'Admin', 'Clarika',N'yUfiuWRdTtKtS4w8J0e0sw==:+4NPkCI0Ndb8cTjm8thi2wOnD3D2prXmsKdci26B3/o=') 
+ --Admin2030
  
 ) AS [Source] ([UserName],[Email],[FirstName],[LastName],[PasswordHash]) 
 
